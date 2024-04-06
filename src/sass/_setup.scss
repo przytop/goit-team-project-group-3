@@ -1,0 +1,65 @@
+:root {
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --bg-color: #ae1332;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  background: var(--bg-color);
+  color: var(--white-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  color: currentColor;
+  line-height: inherit;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
