@@ -1,2 +1,315 @@
-.fruits {
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+}
+
+section .cards-container .fruit-cards .card:nth-child(1) {
+    background-color: #F8766B;
+}
+
+section .cards-container .fruit-cards .card:nth-child(2) {
+    background-color: #EDD251;
+}
+
+section .cards-container .fruit-cards .card:nth-child(3) {
+    background-color: #9DC262;
+}
+
+section .cards-container .fruit-cards .card:nth-child(4) {
+    background-color: #BFD663;
+}
+
+section .cards-container .fruit-cards .card:nth-child(5) {
+    background-color: #E93F29;
+}
+
+section .cards-container .fruit-cards .card:nth-child(6) {
+    background-color: #DB4F4B;
+}
+
+section .cards-container .fruit-cards .card:nth-child(7) {
+    background-color: #9B5366;
+}
+
+section .cards-container .fruit-cards .card:nth-child(8) {
+    background-color: #F47F4C;
+}
+
+section .cards-container .fruit-cards .card:nth-child(9) {
+    background-color: #98B37E;
+}
+
+section .fruit-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .fruit-header .fruit-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 335px;
+    height: 132px;
+    gap: 14px;
+}
+
+section .fruit-header .fruit-header-container p { 
+    width: 334px;
+    height: 90px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: #ffffff;
+}
+
+section .fruit-header .fruit-header-container h2 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/* CARD */
+
+section .cards-container .fruit-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 14px;
+}
+
+section .cards-container .fruit-cards .card {
+    width: 335px;
+    height: 465px;
+    border-radius: 20px;
+    list-style: none;
+}
+
+section .cards-container .fruit-cards .card .card-inside {
+    position: relative;
+}
+
+section .cards-container .fruit-cards .card .card-inside h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    padding-left: 24px;
+    padding-top: 64px;
+    color: #FFFFFF;
+    gap: 7px;
+}
+
+section .cards-container .fruit-cards .card .card-inside p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    padding-left: 24px;
+    color: #ffffff;
+    gap: 4px;
+}
+
+section .cards-container .fruit-cards .card .card-inside img {
+    width: 295px;
+    margin-left: 20px;
+}
+
+section .cards-container .fruit-cards .card .card-inside button {
+    width: 126px;
+    height: 42px;
+    top: 399px;
+    left: 24px;
+    padding: 12px 24px;
+    gap: 10px;
+    border-radius: 200px;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: #AE1332;
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    transition: all 0.3s ease-in;
+}
+
+section .cards-container .fruit-cards .card + .nine,
+section .cards-container .fruit-cards .card + .eight,
+section .cards-container .fruit-cards .card + .seven {
+    display: none;
+}
+
+
+/* BOTTOM BUTTON */
+
+
+section .order-btn button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background-color: #9DC262;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    text-transform: uppercase;
+    rotate: -14deg;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+section .order-btn button img {
+    width: 14px;
+    height: 14px;
+    padding-right: 4px;
+    transition: all 0.3s ease-in;
+}
+
+
+/* HOVER STUFF */
+
+
+section .order-btn button:hover {
+    width: 100px;
+    height: 100px;
+    font-size: 18px;
+    rotate: -374deg;
+}
+
+section .order-btn button:hover img {
+    width: 18px;
+    height: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    
+    section .fruit-header .fruit-header-container {
+        width: 624px;
+        height: 112px;
+    }
+    
+    section .fruit-header .fruit-header-container p { 
+        width: 547px;
+        height: 54px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: -0.04em;
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    section .fruit-header .fruit-header-container h2 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    /* CARD */
+
+    section .cards-container .fruit-cards {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+    }
+
+    section .cards-container .fruit-cards .card .card-inside h3 {
+        font-size: 32px;
+    }
+
+    section .cards-container .fruit-cards .card .card-inside p {
+        font-size: 18px;
+    }
+
+    section .cards-container .fruit-cards .card .card-inside img {
+        width: 295px;
+        margin-left: 25px;
+    }
+
+    section .cards-container .fruit-cards .card .card-inside button {
+        width: 136px;
+        height: 48px;
+        left: 24px;
+        padding: 12px 18px;
+        font-size: 18px;
+        line-height: 24px;
+        transition: all 0.3s ease-in;
+    }
+
+    section .cards-container .fruit-cards .card + .nine {
+        display: none;
+    }
+
+
+    /* BOTTOM BUTTON */
+
+
+    section .order-btn button {
+        width: 114px;
+        height: 114px;
+        font-size: 18px;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+    /* HOVER STUFF */
+
+
+    section .order-btn button:hover {
+        width: 134px;
+        height: 134px;
+        font-size: 22px;
+        rotate: -374deg;
+    }
+
+    section .order-btn button:hover img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+
+    /* CARD */
+
+    section .cards-container .fruit-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+    }
+
+    section .cards-container .fruit-cards .card {
+        width: 389px;
+        height: 465px;
+        border-radius: 20px;
+        list-style: none;
+    }
+
+    section .cards-container .fruit-cards .card .card-inside img {
+        margin-left: 47px;
+    }
+
+    section .cards-container .fruit-cards .card + .nine,
+    section .cards-container .fruit-cards .card + .eight,
+    section .cards-container .fruit-cards .card + .seven  {
+        display: block;
+    }
 }
