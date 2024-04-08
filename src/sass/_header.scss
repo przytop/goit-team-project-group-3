@@ -1,63 +1,21 @@
-
-/* Global Settings */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-html {
-    font-family: "DM Sans", Tahoma, Verdana, sans-serif;
-}
-:root {
-    --color-black: #000000;
-    --color-red: #AE1332;
-    --color-green: #A4CB66;
-    --color-yellow: #F5CE13;
-    --color-white: #FFFFFF;
-
-}
-
 /* Nav Styling */
 .header {
     background-color: var(--white-color);
 }
 
-.list {
-    list-style: none;
-    font-style: normal;
-}
-
-a {
-    text-decoration: none;
-    position: relative;
-}
 .nav-layout {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 16px 0;
-    position: relative;
     margin-left: 20px;
 }
 
 .site-nav {
     list-style-type: none;
-    display: flex;
     justify-content: space-around;
-    visibility: hidden;
-}
-
-.site-nav .link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    color: var(--bg-color);
-    padding: 0 20px;
+    display: none;
 }
 
 .logo-box {
@@ -73,12 +31,15 @@ a {
     color: var(--bg-color);
 }
 
+.icon-basket {
+    display: none;
+}
+
 /* Hamburger menu z divami */
 #hamburger {
-    position: absolute;
-    top: 30%;
+    display: block;
+    top: 18px;
     right: 0;
-    left: 0;
     width: 20px;
     height: 5px;
     margin: 0 auto;
@@ -87,7 +48,6 @@ a {
 }
 
 #hamburger div {
-    position: relative;
     height: 2px;
     background-color: var(--bg-color);
     margin-bottom: 5px;
@@ -121,75 +81,67 @@ a {
     display: none;
 }
 
-@media screen and (max-width: 375px)
-    .backdrop {
-        visibility: hidden;
-    }
-@media screen and (min-width: 375px) and (max-width: 767px) {
-    .backdrop {
-        position: absolute;
-        right: 0;
-        top: 50px;
-        background-color: var(--color-red);
-        height: 92vh;
-        width: 100%;
-        flex-direction: column;
-        text-align: center;
-        transform: translate(100%);
-        transition: .3s ease-in-out;
-        justify-content: center;
-    }
-    
-    .modal-site-nav {
-        background-color: var(--color-red);
-        line-height: 3em;
-        margin-top: 60px;
-    }
-
-    .modal-site-nav .link {
-        color: var(--color-white);
-    }
-    
-    .modal-icon {
-        justify-content: center;
-        margin-top: 10px;
-    }
-
+@media screen and (max-width: 375px) {
     .icon-basket {
-        visibility: hidden;
+        display: none;
     }
-
+}
+    
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .icon-basket {
+        display: none;
+    }
+    
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
-    .site-nav {
-        visibility: visible;
-        justify-content: flex-start;
-        margin-left: 32px;
-    }
-
-    .logo-box {
-            justify-content: center;
-    }
-    .icon-basket {
-        visibility: visible;
-        margin-right: 42px;
+    .header {
+        max-width: 768px;
     }
 
     #hamburger {
-        visibility: hidden;
+        display: none;
+    }
+
+    .nav-layout {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .site-nav .link {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            color: var(--bg-color);
+            padding: 0 16px;
+        }
+    .site-nav {
+        display: flex;
+    }
+    .icon-basket {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 42px;
     }
 }
 
-
 @media only screen and (min-width: 1280px) {
+    #hamburger {
+        display: none;
+    }
     .nav-layout {
         justify-content: space-between;
+        margin-left: 0;
     }
     .site-nav {
-        visibility: visible;
+        display: flex;
         justify-content: flex-start;
         margin-left: 32px;
+    }
+    .site-nav .link {
+        padding: 0 20px;
     }
 
     .logo-box {
@@ -197,11 +149,7 @@ a {
     }
 
     .icon-basket {
-        visibility: visible;
+        display: flex;
         margin-right: 42px;
-    }
-
-    #hamburger {
-        visibility: hidden;
     }
 }
