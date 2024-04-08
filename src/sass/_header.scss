@@ -1,4 +1,3 @@
-/* Nav Styling */
 .header {
   background-color: var(--white-color);
 }
@@ -142,12 +141,16 @@
   .site-nav .link {
     padding: 0 20px;
   }
-
   .logo-box {
     justify-content: center;
   }
+
   .icon-basket {
-    display: flex;
+    visibility: visible;
     margin-right: 42px;
+  }
+
+  #hamburger {
+    visibility: hidden;
   }
 }
