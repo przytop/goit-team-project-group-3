@@ -129,14 +129,44 @@ a {
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
     .site-nav {
         visibility: visible;
+        justify-content: flex-start;
+        margin-left: 32px;
     }
 
+    .logo-box {
+            justify-content: center;
+    }
     .icon-basket {
         visibility: visible;
+        margin-right: 42px;
+    }
+
+    #hamburger {
+        visibility: hidden;
     }
 }
 
 
 @media only screen and (min-width: 1280px) {
-    
+    .nav-layout {
+        justify-content: space-between;
+    }
+    .site-nav {
+        visibility: visible;
+        justify-content: flex-start;
+        margin-left: 32px;
+    }
+
+    .logo-box {
+        justify-content: center;
+    }
+
+    .icon-basket {
+        visibility: visible;
+        margin-right: 42px;
+    }
+
+    #hamburger {
+        visibility: hidden;
+    }
 }
