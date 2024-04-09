@@ -1,13 +1,11 @@
-.hero {
-    background-color: #AE1332;
-}
-
-.container .hero {
-    max-width: 335px;
-    border: 1px dashed blue;
+.hero .container {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .hero-header {
+    margin-top: 56px;
     font-family: inherit;
     font-weight: 500;
     font-size: 32px;
@@ -20,6 +18,10 @@
 }
 
 .hero-banner {
+<<<<<<< Updated upstream
+=======
+    display: block;
+>>>>>>> Stashed changes
     justify-items: center;
     width: 311px;
     height: 484px;
@@ -27,5 +29,10 @@
     background-size: contain;
     border-radius: 311px;
     justify-content: center;
+<<<<<<< Updated upstream
     box-shadow: 0 4px;
+=======
+    /* display: block; */
+    box-shadow: 0 4px
+>>>>>>> Stashed changes
 }
