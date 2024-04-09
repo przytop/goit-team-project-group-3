@@ -20,7 +20,12 @@
 }
 
 .hero-banner {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    border-radius: 50%;
-
+    justify-items: center;
+    width: 311px;
+    height: 484px;
+    background-image: url(hero-girl-mobile.82420eff.jpg);
+    background-size: contain;
+    border-radius: 311px;
+    justify-content: center;
+    box-shadow: 0 4px;
 }
