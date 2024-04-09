@@ -15,6 +15,10 @@
       <path fill="none" stroke="#ae1332" stroke-linecap="round" stroke-linejoin="round"
         stroke-width="2.667" d="M24 8 8 24M8 8l16 16" style="stroke:var(--color1, #ae1332)" />
     </symbol>
+    <symbol id="icon-close-btn-white" viewBox="0 0 32 32">
+      <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2.667" d="M24 8 8 24M8 8l16 16" style="stroke:var(--color1, #fff)" />
+    </symbol>
     <symbol id="icon-basket-white" viewBox="0 0 27 32">
       <path fill="#fff"
         d="M24.222 8.222h-4.667V6.666a6.222 6.222 0 1 0-12.444 0v1.556H2.444A1.555 1.555 0 0 0 .888 9.778v17.111a4.667 4.667 0 0 0 4.667 4.667h15.556a4.667 4.667 0 0 0 4.667-4.667V9.778a1.555 1.555 0 0 0-1.556-1.556zm-14-1.555a3.114 3.114 0 0 1 3.111-3.111 3.114 3.114 0 0 1 3.111 3.111v1.556h-6.222V6.667zm12.445 20.222a1.555 1.555 0 0 1-1.556 1.556H5.555a1.555 1.555 0 0 1-1.556-1.556V11.333H7.11v1.556a1.555 1.555 0 0 0 2.656 1.1c.292-.292.456-.687.456-1.1v-1.556h6.222v1.556a1.555 1.555 0 0 0 2.656 1.1c.292-.292.456-.687.456-1.1v-1.556h3.111v15.556z"
