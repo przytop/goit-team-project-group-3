@@ -1,54 +1,54 @@
 .fruits {
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 44px;
 }
 
-section .cards-container .fruit-cards .card:nth-child(1) {
+.fruits .cards-container .fruit-cards .card:nth-child(1) {
     background-color: #F8766B;
 }
 
-section .cards-container .fruit-cards .card:nth-child(2) {
+.fruits .cards-container .fruit-cards .card:nth-child(2) {
     background-color: #EDD251;
 }
 
-section .cards-container .fruit-cards .card:nth-child(3) {
+.fruits .cards-container .fruit-cards .card:nth-child(3) {
     background-color: #9DC262;
 }
 
-section .cards-container .fruit-cards .card:nth-child(4) {
+.fruits .cards-container .fruit-cards .card:nth-child(4) {
     background-color: #BFD663;
 }
 
-section .cards-container .fruit-cards .card:nth-child(5) {
+.fruits .cards-container .fruit-cards .card:nth-child(5) {
     background-color: #E93F29;
 }
 
-section .cards-container .fruit-cards .card:nth-child(6) {
+.fruits .cards-container .fruit-cards .card:nth-child(6) {
     background-color: #DB4F4B;
 }
 
-section .cards-container .fruit-cards .card:nth-child(7) {
+.fruits .cards-container .fruit-cards .card:nth-child(7) {
     background-color: #9B5366;
 }
 
-section .cards-container .fruit-cards .card:nth-child(8) {
+.fruits .cards-container .fruit-cards .card:nth-child(8) {
     background-color: #F47F4C;
 }
 
-section .cards-container .fruit-cards .card:nth-child(9) {
+.fruits .cards-container .fruit-cards .card:nth-child(9) {
     background-color: #98B37E;
 }
 
-section .fruit-header {
+.fruits .fruit-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 44px;
 }
 
-section .fruit-header .fruit-header-container {
+.fruits .fruit-header .fruit-header-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +57,7 @@ section .fruit-header .fruit-header-container {
     gap: 14px;
 }
 
-section .fruit-header .fruit-header-container p { 
+.fruits .fruit-header .fruit-header-container p { 
     width: 334px;
     height: 90px;
     font-size: 14px;
@@ -68,7 +68,7 @@ section .fruit-header .fruit-header-container p {
     color: #ffffff;
 }
 
-section .fruit-header .fruit-header-container h2 {
+.fruits .fruit-header .fruit-header-container h2 {
     font-size: 28px;
     font-weight: 500;
     line-height: 28px;
@@ -80,24 +80,24 @@ section .fruit-header .fruit-header-container h2 {
 
 /* CARD */
 
-section .cards-container .fruit-cards {
+.fruits .cards-container .fruit-cards {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 14px;
 }
 
-section .cards-container .fruit-cards .card {
+.fruits .cards-container .fruit-cards .card {
     width: 335px;
     height: 465px;
     border-radius: 20px;
     list-style: none;
 }
 
-section .cards-container .fruit-cards .card .card-inside {
+.fruits .cards-container .fruit-cards .card .card-inside {
     position: relative;
 }
 
-section .cards-container .fruit-cards .card .card-inside h3 {
+.fruits .cards-container .fruit-cards .card .card-inside h3 {
     font-size: 24px;
     font-weight: 700;
     line-height: 38px;
@@ -109,7 +109,7 @@ section .cards-container .fruit-cards .card .card-inside h3 {
     gap: 7px;
 }
 
-section .cards-container .fruit-cards .card .card-inside p {
+.fruits .cards-container .fruit-cards .card .card-inside p {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -120,12 +120,24 @@ section .cards-container .fruit-cards .card .card-inside p {
     gap: 4px;
 }
 
-section .cards-container .fruit-cards .card .card-inside img {
+.fruits .cards-container .fruit-cards .card .card-inside img {
     width: 295px;
     margin-left: 20px;
 }
 
-section .cards-container .fruit-cards .card .card-inside button {
+.fruits .cards-container .fruit-cards .card .card-inside .fruits-shadow {
+    background-color: #000000;
+    width: 195px;
+    height: 38px;
+    opacity: 0.05;
+    filter: blur(5px);
+    border-radius: 50%;
+    position: absolute;
+    left: 70px;
+    top: 365px;
+}
+
+.fruits .cards-container .fruit-cards .card .card-inside button {
     width: 126px;
     height: 42px;
     top: 399px;
@@ -148,17 +160,23 @@ section .cards-container .fruit-cards .card .card-inside button {
     transition: all 0.3s ease-in;
 }
 
-section .cards-container .fruit-cards .card + .nine,
-section .cards-container .fruit-cards .card + .eight,
-section .cards-container .fruit-cards .card + .seven {
+.fruits .cards-container .fruit-cards .card + .nine,
+.fruits .cards-container .fruit-cards .card + .eight,
+.fruits .cards-container .fruit-cards .card + .seven {
     display: none;
 }
 
 
 /* BOTTOM BUTTON */
 
+.fruits .order-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 44px;
+    margin-bottom: 80px;
+}
 
-section .order-btn button {
+.fruits .order-btn button {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -176,9 +194,10 @@ section .order-btn button {
     transition: all 0.5s ease-in-out;
 }
 
-section .order-btn button img {
+.fruits .order-btn button svg {
     width: 14px;
     height: 14px;
+    fill: var(--white-color);
     padding-right: 4px;
     transition: all 0.3s ease-in;
 }
@@ -187,26 +206,31 @@ section .order-btn button img {
 /* HOVER STUFF */
 
 
-section .order-btn button:hover {
+.fruits .order-btn button:hover {
     width: 100px;
     height: 100px;
     font-size: 18px;
     rotate: -374deg;
 }
 
-section .order-btn button:hover img {
+.fruits .order-btn button:hover img {
     width: 18px;
     height: 18px;
 }
 
 @media screen and (min-width: 768px) {
+
+    .fruits.container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
     
-    section .fruit-header .fruit-header-container {
-        width: 624px;
+    .fruits .fruit-header .fruit-header-container {
+        width: 100%;
         height: 112px;
     }
     
-    section .fruit-header .fruit-header-container p { 
+    .fruits .fruit-header .fruit-header-container p { 
         width: 547px;
         height: 54px;
         font-size: 14px;
@@ -217,33 +241,43 @@ section .order-btn button:hover img {
         color: #ffffff;
     }
     
-    section .fruit-header .fruit-header-container h2 {
+    .fruits .fruit-header .fruit-header-container h2 {
         font-size: 40px;
         line-height: 44px;
     }
 
     /* CARD */
 
-    section .cards-container .fruit-cards {
-        grid-template-columns: 1fr 1fr;
+    .fruits .cards-container .fruit-cards {
+        width: 100%;
+        grid-template-columns: 344px 344px;
         grid-column-gap: 16px;
         grid-row-gap: 16px;
     }
 
-    section .cards-container .fruit-cards .card .card-inside h3 {
+    .fruits .cards-container .fruit-cards .card {
+        width: 344px;
+    }
+
+    .fruits .cards-container .fruit-cards .card .card-inside h3 {
         font-size: 32px;
     }
 
-    section .cards-container .fruit-cards .card .card-inside p {
+    .fruits .cards-container .fruit-cards .card .card-inside p {
         font-size: 18px;
     }
 
-    section .cards-container .fruit-cards .card .card-inside img {
+    .fruits .cards-container .fruit-cards .card .card-inside img {
         width: 295px;
         margin-left: 25px;
     }
 
-    section .cards-container .fruit-cards .card .card-inside button {
+    .fruits .cards-container .fruit-cards .card .card-inside .fruits-shadow {
+        left: 75px;
+        top: 365px;
+    }
+
+    .fruits .cards-container .fruit-cards .card .card-inside button {
         width: 136px;
         height: 48px;
         left: 24px;
@@ -253,7 +287,7 @@ section .order-btn button:hover img {
         transition: all 0.3s ease-in;
     }
 
-    section .cards-container .fruit-cards .card + .nine {
+    .fruits .cards-container .fruit-cards .card + .nine {
         display: none;
     }
 
@@ -261,7 +295,7 @@ section .order-btn button:hover img {
     /* BOTTOM BUTTON */
 
 
-    section .order-btn button {
+    .fruits .order-btn button {
         width: 114px;
         height: 114px;
         font-size: 18px;
@@ -272,14 +306,14 @@ section .order-btn button:hover img {
     /* HOVER STUFF */
 
 
-    section .order-btn button:hover {
+    .fruits .order-btn button:hover {
         width: 134px;
         height: 134px;
         font-size: 22px;
         rotate: -374deg;
     }
 
-    section .order-btn button:hover img {
+    .fruits .order-btn button:hover img {
         width: 18px;
         height: 18px;
     }
@@ -287,29 +321,39 @@ section .order-btn button:hover img {
 
 @media screen and (min-width: 1280px) {
 
+    .fruits.container {
+        max-width: 1280px;
+        padding: 0 32px;
+    }
+
 
     /* CARD */
 
-    section .cards-container .fruit-cards {
+    .fruits .cards-container .fruit-cards {
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 24px;
         grid-row-gap: 24px;
     }
 
-    section .cards-container .fruit-cards .card {
+    .fruits .cards-container .fruit-cards .card {
         width: 389px;
         height: 465px;
         border-radius: 20px;
         list-style: none;
     }
 
-    section .cards-container .fruit-cards .card .card-inside img {
+    .fruits .cards-container .fruit-cards .card .card-inside img {
         margin-left: 47px;
     }
 
-    section .cards-container .fruit-cards .card + .nine,
-    section .cards-container .fruit-cards .card + .eight,
-    section .cards-container .fruit-cards .card + .seven  {
+    .fruits .cards-container .fruit-cards .card .card-inside .fruits-shadow {
+        left: 97px;
+        top: 365px;
+    }
+
+    .fruits .cards-container .fruit-cards .card + .nine,
+    .fruits .cards-container .fruit-cards .card + .eight,
+    .fruits .cards-container .fruit-cards .card + .seven  {
         display: block;
     }
 }
