@@ -1,1 +1,28 @@
-<div class="modal-thankyou"></div>
+<div class="modal-thankyou is-open">
+  <button class="thankyou-close" type="button">
+    <svg class="close-icon" width="14" height="14">
+      <use href="./images/icons.svg#icon-close-btn"></use>
+    </svg>
+  </button>
+  <div class="thankyou-picture">
+    <picture>
+      <source
+        media="(max-width: 767px)"
+        srcset="./images/thankyou-mobile.png 1x, ./images/thankyou-mobile@2x.png 2x"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="./images/thankyou-tablet-desktop.png 1x, ./images/thankyou-tablet-desktop@2x.png 2x"
+      />
+      <img src="./images/thankyou-mobile.png" alt="Raspberries" />
+    </picture>
+  </div>
+  <div>
+    <h2 class="thankyou-title">tHANK YOU</h2>
+    <p class="thankyou-text">
+      Thank you for your order! Our team is preparing your box with fresh, delicious fruits and
+      vegetables, and we'll deliver it straight to your doorstep. We appreciate your business and
+      look forward to providing you with the best possible experience!
+    </p>
+  </div>
+</div>
