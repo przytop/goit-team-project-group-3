@@ -1,2 +1,17 @@
-.contacts {
+.contacts-main-paragraph {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+}
+
+.contacts-photos {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
 }
