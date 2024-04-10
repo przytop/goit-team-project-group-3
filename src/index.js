@@ -25,3 +25,8 @@ document.querySelector('#modal-btn-close').addEventListener('click', () => {
 document.querySelector('#modal-btn-submit').addEventListener('click', () => {
   modalYourorder.classList.add('is-closed');
 });
+
+// --- thankyou --- //
+document.querySelector('#thankyou-btn').addEventListener('click', () => {
+  document.querySelector('#modal-thankyou').classList.add('is-closed');
+});
