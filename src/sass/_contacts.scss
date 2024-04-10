@@ -29,6 +29,7 @@ line-height: 18px;
 letter-spacing: -0.04em;
 text-align: center;
 }
+
 .contacts-input {
 width: 292px;
 height: 48px;
@@ -39,4 +40,20 @@ border-radius: 100px;
 opacity: 0.3px;
 border: 1px solid rgba(255, 255, 255, 1);
 background-color: transparent;
+color: #FFFFFF;
+}
+
+.contacts-form {
+    text-align: center;
+}
+.contacts-button {
+    width: Hug (102px)px;
+    height: Hug (48px)px;
+    top: 134px;
+    left: 290px;
+    padding: 15px 35px 15px 35px;
+    gap: 15px;
+    border-radius: 100px;
+    opacity: 0px;
+    background-color: #A4CB66;
 }
