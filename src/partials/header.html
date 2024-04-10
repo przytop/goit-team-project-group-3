@@ -1,9 +1,14 @@
 <header class="header container">
     <nav class="nav-layout">
-        <ul class="list site-nav">
+        <ul class="list site-nav off-screen-menu">
             <li><a href="" class="link" id="how-it-works">How It Works</a></li>
             <li><a href="" class="link" id="fruits">Fruits</a></li>
             <li><a href="" class="link" id="contacts">Contacts</a></li>
+            <li>
+              <svg class="icon icon-basket-white" width="28" height="28">
+                <use xlink:href="./images/icons.svg#icon-basket-white"></use>
+              </svg>
+            </li>
         </ul>
         <div class="logo-box">
             <svg class="logo" width="16" height="16">
@@ -17,10 +22,21 @@
                 <use href="./images/icons.svg#icon-basket"></use>
             </svg>
         </div>
-        <div class="hamburger" id="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
     </nav>
 </header>
+
+<script>
+  const hamMenu = document.querySelector('.ham-menu');
+  const offScreenMenu = document.querySelector('.off-screen-menu');
+
+  hamMenu.addEventListener('click', () => {
+    hamMenu.classList.toggle('active');
+    offScreenMenu.classList.toggle('active');
+  })
+
+</script>
