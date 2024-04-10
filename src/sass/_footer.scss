@@ -1,3 +1,23 @@
+.footer-background {
+  background-color: white;
+}
+
 .footer-woman-image {
-  width: 400px;
+  width: 300px;
+  margin-top: 80px;
+}
+
+.footer-icon-logo {
+  display: inline-block;
+}
+
+.footer-text-logo {
+  color: var(--bg-color);
+}
+
+.footer-socials-logo {
+  width: 40px;
+  height: 40px;
+  border: 1px;
+  padding: 8px;
 }
