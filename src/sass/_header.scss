@@ -9,7 +9,6 @@
     align-items: center;
     width: 100%;
     padding: 16px 0;
-    margin-left: 20px;
 }
 
 .nav-layout .site-nav {
@@ -19,8 +18,7 @@
 
 .nav-layout .logo-box {
     display: flex;
-    // justify-content: left;
-    text-align: center;
+    gap: 8px;
 }
 
 .nav-layout .logo-text {
@@ -40,7 +38,7 @@
     background-color: var(--bg-color);
     height: 100vh;
     width: 100%;
-    max-width: 1280px;
+    // max-width: 1280px;
     position: fixed;
     top: 50px;
     right: -1280px;
@@ -49,8 +47,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 3rem;
+    // font-size: 3rem;
     transition: .3s ease;
+    gap: 16px;
 }
 
 .off-screen-menu.active {
@@ -61,7 +60,6 @@
 .ham-menu {
     height: 24px;
     width: 20px;
-    margin-left: auto;
     position: relative;
     cursor: pointer;
 }
@@ -81,11 +79,13 @@
 .ham-menu span:nth-child(1) {
     top: 25%;
     width: 50%;
+    left: 5px;
 }
 
 .ham-menu span:nth-child(3) {
     top: 75%;
     width: 75%;
+    left: 7.5px;
 }
 
 .ham-menu.active span:nth-child(1) {
@@ -101,7 +101,7 @@
 .ham-menu.active span:nth-child(3) {
     top: 50%;
     width: 100%;
-    transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-60%, -50%) rotate(-45deg);
 }
 
 .site-nav {
@@ -110,13 +110,10 @@
     /* justify-content: space-around; */
 }
 
-.site-nav .link {
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 18px;
-    letter-spacing: 4%;
+.off-screen-menu .link {
+    line-height: 129%;
+    letter-spacing: var(--letter-spacing);
     text-align: center;
-    gap: 10px;
     color: var(--color-white);
 }
 
@@ -130,23 +127,17 @@
     color: var(--color-red);
 }
 
-@media screen and (max-width: 375px) {
+
+@media screen and (max-width: 767px) {
     .nav-layout .icon-basket {
         display: none;
     }
-}
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
-    .nav-layout .icon-basket {
-        display: none;
-    }
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
-    .container {
-        max-width: 768px;
+    .header + .container {
         padding: 0 32px;
+        max-width: 1279px;
     }
 
     .nav-layout .ham-menu {
@@ -162,6 +153,9 @@
         justify-content: space-between;
         align-items: center;
     }
+    .header .nav-layout .site-nav {
+        display: flex;
+    }
 
     .nav-layout .site-nav .link {
         font-weight: 400;
@@ -170,10 +164,6 @@
         text-align: center;
         color: var(--bg-color);
         gap: 16px;
-    }
-
-    .nav-layout .site-nav {
-        display: flex;
     }
 
     .nav-layout .icon-basket {
@@ -223,7 +213,7 @@
         font-size: 14px;
         line-height: 18px;
         text-align: center;
-        color: var(--color-white);
+        color: var(--bg-color);
         padding: 0 20px;
     }
 }
