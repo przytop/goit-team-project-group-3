@@ -7,7 +7,22 @@ import './sass/main.scss';
 // document.querySelector('#').addEventListener('click', () => {
 //   document.querySelector('#').classList.remove('is-closed');
 
+// --- header --- //
+const hamMenu = document.querySelector('.ham-menu');
+const offScreenMenu = document.querySelector('.off-screen-menu');
+
+hamMenu.addEventListener('click', () => {
+  hamMenu.classList.toggle('active');
+  offScreenMenu.classList.toggle('active');
+});
+
 // --- yourorder --- //
+const modalYourorder = document.querySelector('#modal-yourorder');
+
 document.querySelector('#modal-btn-close').addEventListener('click', () => {
-  document.querySelector('#modal-yourorder').classList.add('is-closed');
+  modalYourorder.classList.add('is-closed');
+});
+
+document.querySelector('#modal-btn-submit').addEventListener('click', () => {
+  modalYourorder.classList.add('is-closed');
 });
