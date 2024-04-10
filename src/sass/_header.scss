@@ -18,8 +18,9 @@
 }
 
 .nav-layout .logo-box {
-    display: inline-flex;
-    justify-content: left;
+    display: flex;
+    // justify-content: left;
+    text-align: center;
 }
 
 .nav-layout .logo-text {
@@ -143,8 +144,9 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
-    .header {
-        max-width: 1279px;
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
     }
 
     .nav-layout .ham-menu {
@@ -167,7 +169,7 @@
         line-height: 2px;
         text-align: center;
         color: var(--bg-color);
-        padding: 0 16px;
+        gap: 16px;
     }
 
     .nav-layout .site-nav {
@@ -176,13 +178,11 @@
 
     .nav-layout .icon-basket {
         display: flex;
-        justify-content: flex-end;
-        margin-right: 42px;
     }
 }
 
 @media only screen and (min-width: 1280px) {
-    .header {
+    .container {
         max-width: 1280px;
     }
 
