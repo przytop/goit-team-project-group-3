@@ -79,7 +79,8 @@
 .fruit-desc {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end ;
+    justify-content: flex-end;
+    margin: 0 auto;
     width: 249px;
     height: 387px;
     border-radius: 500px;
@@ -133,4 +134,55 @@
 
 .fruit-desc-text.yellow {
     width: 165px;
+}
+
+.first-block {
+    padding-top: 44px;
+}
+.first-block-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.04em;
+    color: #fff;
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+    width: 280px;
+    height: 90px;
+    margin: 0 auto 44px;
+}
+
+.second-block {
+    padding-top: 44px;
+}
+
+.anchor-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin: 0 auto 44px;
+}
+
+.anchor-li {
+    border: 1px solid #fff;
+    padding: 12px 32px;
+    border-radius: 1000px;
+    height: 38px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+}
+
+.anchor-li:nth-child(odd) {
+    width: 125px;
+}
+
+.anchor-li:nth-child(even) {
+    width: 132px;
 }
