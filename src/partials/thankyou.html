@@ -1,4 +1,4 @@
-<div class="thankyou-background is-open" id="modal-thankyou">
+<div class="thankyou-background" id="modal-thankyou">
   <div class="modal-thankyou">
     <button class="thankyou-close" type="button" id="thankyou-btn">
       <svg class="close-icon" width="14" height="14">
@@ -32,7 +32,8 @@
   </div>
 </div>
 
-<scrip>
-  document.querySelector("#thankyou-btn").addEventListener("click", () => {
-  document.querySelector("#modal").classList.add("is-closed"); });
-</scrip>
+<script>
+  document.querySelector('#thankyou-btn').addEventListener('click', () => {
+    document.querySelector('#modal-thankyou').classList.add('is-closed');
+  });
+</script>
