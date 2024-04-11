@@ -28,6 +28,18 @@ document.querySelector('#modal-btn-close').addEventListener('click', () => {
   modalYourOrder.classList.add('is-closed');
 });
 
+document.querySelector('#checkbox-input-one').addEventListener('click', () => {
+  document.querySelector('#checkbox-icon-one').classList.toggle('is-hidden');
+});
+
+document.querySelector('#checkbox-input-two').addEventListener('click', () => {
+  document.querySelector('#checkbox-icon-two').classList.toggle('is-hidden');
+});
+
+document.querySelector('#checkbox-input-three').addEventListener('click', () => {
+  document.querySelector('#checkbox-icon-three').classList.toggle('is-hidden');
+});
+
 document.querySelector('#modal-btn-submit').addEventListener('click', () => {
   modalYourOrder.classList.add('is-closed');
 });
