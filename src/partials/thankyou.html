@@ -1,7 +1,7 @@
-<div class="thankyou-background" id="modal-thankyou">
+<div class="thankyou-background is-closed" id="modal-thankyou">
   <div class="modal-thankyou">
     <button class="thankyou-close" type="button" id="thankyou-btn">
-      <svg class="close-icon" width="14" height="14">
+      <svg class="close-icon" width="28" height="28">
         <use href="./images/icons.svg#icon-close-btn-white"></use>
       </svg>
     </button>
@@ -21,9 +21,9 @@
         <img src="./images/thankyou-mobile.png" alt="Raspberries" />
       </picture>
     </div>
-    <div class="aaa">
+    <div class="thankyou-text">
       <h2 class="thankyou-title">tHANK YOU</h2>
-      <p class="thankyou-text">
+      <p class="thankyou-paragraph">
         Thank you for your order! Our team is preparing your box with fresh, delicious fruits and
         vegetables, and we'll deliver it straight to your doorstep. We appreciate your business and
         look forward to providing you with the best possible experience!
@@ -31,9 +31,3 @@
     </div>
   </div>
 </div>
-
-<script>
-  document.querySelector('#thankyou-btn').addEventListener('click', () => {
-    document.querySelector('#modal-thankyou').classList.add('is-closed');
-  });
-</script>
