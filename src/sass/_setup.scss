@@ -67,6 +67,12 @@ textarea {
 
 .is-hidden {
   visibility: hidden;
+  opacity: 0;
+}
+
+.is-visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
