@@ -1,0 +1,186 @@
+.hero .container {
+    border: 1px dashed blue;
+}
+
+.hero-header {
+    position: relative;
+    z-index: 999;
+    margin: 56px auto -56px;
+    width: 100%;
+    height: 118px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hero-banner {
+    justify-items: center;
+    margin: 0 auto;
+    width: 311px;
+    height: 484px;
+    background-image: url(../images/hero-girl-mobile.jpg);
+    background-size: cover;
+    border-radius: 500px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    outline: 1px solid white;
+    outline-offset: 12px;
+}
+
+.hero-shop-button {
+    position: absolute;
+    top: 560px;
+    left: 0;
+    right: 0;
+    justify-items: center;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--bg-color);
+    background-color: var(--white-color);
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+    transform: rotate(-14deg);
+}
+
+.hero-fruits {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 56px;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    width: 335px;
+}
+
+// problem with align item to the flex-start 
+.hero-fruits-li:nth-child(2) {
+    align-items: flex-start;
+    rotate: rotate(-14deg);
+}
+
+.fruit-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 auto;
+    width: 249px;
+    height: 387px;
+    border-radius: 500px;
+}
+
+.green {
+    background-color: #a4cb66;
+}
+
+.yellow {
+    background-color: #F5CE13;
+}
+
+.fruit-h3 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: #fff;
+    padding-top: 28px;
+    margin-bottom: auto;
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+}
+
+.fruit-img {
+    margin: 0 auto;
+}
+
+.fruit-desc-text {
+    display: flex;
+    width: 155px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fruit-desc-text.green {
+    width: 155px;
+}
+
+.fruit-desc-text.yellow {
+    width: 165px;
+}
+
+.first-block {
+    padding-top: 84px;
+}
+
+.first-block-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.04em;
+    color: #fff;
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+    width: 280px;
+    height: 90px;
+    margin: 0 auto 44px;
+}
+
+.second-block {
+    padding-top: 44px;
+    margin-bottom: 80px;
+}
+
+.anchor-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin: 0 auto 44px;
+}
+
+.anchor-li {
+    border: 1px solid #fff;
+    padding: 12px 32px;
+    border-radius: 1000px;
+    height: 38px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+}
+
+.anchor-li:nth-child(odd) {
+    width: 125px;
+}
+
+.anchor-li:nth-child(even) {
+    width: 132px;
+}
