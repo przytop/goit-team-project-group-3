@@ -2,6 +2,7 @@
     flex-direction: column;
     align-items: center;
     gap: 44px;
+    background-color: var(--bg-color);
 }
 
 .fruits .cards-container .fruit-cards .card:nth-child(1) {
@@ -63,19 +64,19 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
-    letter-spacing: -0.04em;
+    letter-spacing: var(--letter-spacing);
     text-align: center;
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 .fruits .fruit-header .fruit-header-container h2 {
     font-size: 28px;
     font-weight: 500;
     line-height: 28px;
-    letter-spacing: -0.04em;
+    letter-spacing: var(--letter-spacing);
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 /* CARD */
@@ -101,11 +102,11 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 38px;
-    letter-spacing: -0.04em;
+    letter-spacing: var(--letter-spacing);
     text-align: left;
     padding-left: 24px;
     padding-top: 64px;
-    color: #FFFFFF;
+    color: var(--white-color);
     gap: 7px;
 }
 
@@ -113,10 +114,10 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: -0.02em;
+    letter-spacing: var(--letter-spacing-smaller);
     text-align: left;
     padding-left: 24px;
-    color: #ffffff;
+    color: var(--white-color);
     gap: 4px;
 }
 
@@ -126,7 +127,7 @@
 }
 
 .fruits .cards-container .fruit-cards .card .card-inside .fruits-shadow {
-    background-color: #000000;
+    background-color: var(--black-color);
     width: 195px;
     height: 38px;
     opacity: 0.05;
@@ -146,14 +147,14 @@
     gap: 10px;
     border-radius: 200px;
     border: none;
-    background-color: #ffffff;
+    background-color: var(--white-color);
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
-    letter-spacing: -0.04em;
+    letter-spacing: var(--letter-spacing);
     text-align: left;
-    color: #AE1332;
+    color: var(--bg-color);
     position: absolute;
     left: 24px;
     bottom: 24px;
@@ -182,11 +183,11 @@
     border-radius: 50%;
     border: none;
     background-color: #9DC262;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
-    letter-spacing: -0.04em;
+    letter-spacing: var(--letter-spacing);
     text-align: center;
     text-transform: uppercase;
     rotate: -14deg;
@@ -236,9 +237,9 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 18px;
-        letter-spacing: -0.04em;
+        letter-spacing: var(--letter-spacing);
         text-align: center;
-        color: #ffffff;
+        color: var(--white-color);
     }
     
     .fruits .fruit-header .fruit-header-container h2 {
