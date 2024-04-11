@@ -5,6 +5,7 @@ border: 1px dashed blue;
 
 .hero-header-div {
     margin: 56px auto -66px;
+    position: relative;
 }
 
 .hero-header {
@@ -22,6 +23,21 @@ border: 1px dashed blue;
     text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
 }
 
+.hero-header-img-strawberries {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    filter: blur(1px);
+}
+
+.hero-header-img-bananas {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    filter: blur(1px);
+    transform: rotate(-5deg);
+}
+
 .hero-banner {
     position: relative;
     justify-items: center;
@@ -32,8 +48,6 @@ border: 1px dashed blue;
     background-size: cover;
     border-radius: 500px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    // outline: 1px solid white;
-    // outline-offset: 12px;
 }
 
 .hero-banner-outline-svg {
