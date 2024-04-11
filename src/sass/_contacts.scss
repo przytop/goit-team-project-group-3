@@ -4,7 +4,7 @@
 /* ================================================= MOBILE 👇 ========================================= */
 @media screen and (max-width: 767px) {
   .contacts-main-paragraph {
-    width: 335px;
+    max-width: 335px;
     height: 96px;
     font-family: var(--font-family);
     font-weight: 500;
