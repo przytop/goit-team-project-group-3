@@ -3,7 +3,8 @@ import './sass/main.scss';
 // ------- CONST ------- //
 const hamMenu = document.querySelector('.ham-menu');
 const offScreenMenu = document.querySelector('.off-screen-menu');
-const modalYourorder = document.querySelector('#modal-yourorder');
+const modalYourOrder = document.querySelector('#modal-yourorder');
+const modalThankYou = document.querySelector('#modal-thankyou');
 
 // ------- SCRIPTS ------- //
 // --- header --- //
@@ -14,19 +15,24 @@ hamMenu.addEventListener('click', () => {
 
 // --- fruits --- //
 document.querySelector('#order-btn-click').addEventListener('click', () => {
-  modalYourorder.classList.remove('is-closed');
+  modalYourOrder.classList.remove('is-closed');
+});
+
+// --- contacts --- //
+document.querySelector('#contacts-modal-button').addEventListener('click', () => {
+  modalThankYou.classList.remove('is-closed');
 });
 
 // --- yourorder --- //
 document.querySelector('#modal-btn-close').addEventListener('click', () => {
-  modalYourorder.classList.add('is-closed');
+  modalYourOrder.classList.add('is-closed');
 });
 
 document.querySelector('#modal-btn-submit').addEventListener('click', () => {
-  modalYourorder.classList.add('is-closed');
+  modalYourOrder.classList.add('is-closed');
 });
 
 // --- thankyou --- //
 document.querySelector('#thankyou-btn').addEventListener('click', () => {
-  document.querySelector('#modal-thankyou').classList.add('is-closed');
+  modalThankYou.classList.add('is-closed');
 });
