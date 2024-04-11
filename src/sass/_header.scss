@@ -1,6 +1,7 @@
 /* Nav Styling */
+
 .header {
-    background-color: var(--white-color);
+    max-width: 100%;
 }
 
 .header .nav-layout {
@@ -135,7 +136,7 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
-    .header + .container {
+    .header {
         padding: 0 32px;
         max-width: 1279px;
     }
@@ -155,6 +156,7 @@
     }
     .header .nav-layout .site-nav {
         display: flex;
+        gap: 16px;
     }
 
     .nav-layout .site-nav .link {
@@ -163,7 +165,6 @@
         line-height: 2px;
         text-align: center;
         color: var(--bg-color);
-        gap: 16px;
     }
 
     .nav-layout .icon-basket {
