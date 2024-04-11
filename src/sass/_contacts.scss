@@ -14,10 +14,12 @@
     color: #fff;
     text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
     margin: auto;
+    position: relative;
+    top: 45px;
   }
   .contacts-melon {
-    gap: 0px;
     border-radius: 20px;
+    margin-bottom: 80px;
   }
 
   .contacts-berries {
@@ -43,6 +45,8 @@
     color: #fff;
     text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
     margin: auto;
+    position: relative;
+    top: 30px;
   }
   .contacts-photos {
     display: flex;
@@ -65,7 +69,12 @@
     line-height: 18px;
     letter-spacing: -0.04em;
     text-align: center;
-    padding: 72px 24px;
+    width: 492px;
+    height: 54px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 
   .contacts-input {
@@ -83,7 +92,7 @@
 
   .contacts-form {
     text-align: center;
-    gap: 80px;
+    margin-bottom: 144px;
   }
   .contacts-button {
     width: Hug (102px) px;
@@ -97,9 +106,6 @@
     background-color: #a4cb66;
   }
 
-  .contacts-subscription {
-    margin-bottom: 150px;
-  }
   .contacts-box {
     display: flex;
     flex-direction: column;
@@ -123,6 +129,8 @@
     color: #fff;
     text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
     margin: auto;
+    position: relative;
+    top: 130px;
   }
 
   .contacts-photos {
@@ -130,6 +138,7 @@
     flex-wrap: nowrap;
     gap: 24px;
     justify-content: center;
+    margin-top: 89px;
   }
   .contacts-melon {
     gap: 0px;
@@ -143,12 +152,19 @@
 
   .contacts-description {
     font-family: var(--font-family);
+    width: 492px;
+    height: 54px;
+    gap: 14px;
+    opacity: 0px;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.04em;
     text-align: center;
-    padding: 72px 24px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .contacts-input {
@@ -166,7 +182,6 @@
 
   .contacts-form {
     text-align: center;
-    gap: 80px;
   }
   .contacts-button {
     width: Hug (102px) px;
@@ -178,14 +193,21 @@
     border-radius: 100px;
     opacity: 0px;
     background-color: #a4cb66;
+    text-align: center;
   }
 
   .contacts-subscription {
     margin-bottom: 150px;
+    margin-left: 494px;
+    margin-right: 494px;
   }
   .contacts-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .contacts-subscription {
+    display: flex;
+    align-items: center;
   }
 }
