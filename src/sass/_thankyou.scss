@@ -1,2 +1,84 @@
+.thankyou-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
 .modal-thankyou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 335px;
+  min-height: 426px;
+  background-color: #e03f5e;
+  border-radius: 20px;
+  padding: 40px 20px;
+}
+
+.thankyou-close {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  top: 20px;
+  right: 20px;
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  fill: var(--white-color);
+}
+
+.thankyou-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  max-width: 295px;
+}
+
+.thankyou-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: var(--letter-spacing);
+  text-transform: uppercase;
+  color: var(--white-color);
+  text-shadow: var(--text-shadow);
+}
+
+.thankyou-paragraph {
+  line-height: 1.28571;
+  letter-spacing: var(--letter-spacing);
+  text-align: center;
+  color: var(--white-color);
+  text-shadow: var(--text-shadow);
+}
+
+/* =================TABLET================= */
+
+@media screen and (min-width: 768px) {
+  .modal-thankyou {
+    width: 600px;
+    min-height: 545px;
+    gap: 28px;
+    padding: 68px 104px 80px 105px;
+  }
+
+  .thankyou-text {
+    max-width: 391px;
+  }
+
+  .thankyou-title {
+    font-size: 40px;
+    line-height: 1.1;
+  }
 }
