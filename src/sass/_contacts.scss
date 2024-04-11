@@ -1,4 +1,43 @@
+/* ================================================= MOBILE 👇 ========================================= */
+@media screen and (max-width:767px) {
+    .contacts-main-paragraph {
+        width: 335px;
+        height: 96px;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 32px;
+        line-height: 100%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+        margin: auto;
+    }
+    .contacts-melon {
+        gap: 0px;
+        border-radius: 20px;
+        }
+
+    .contacts-berries {
+        display: none;
+        }
+    .contacts-box {
+        display: none;
+        }
+
+}
+
+
+
+
+
+/* ================================================= DESKTOP 👇 ========================================= */
+@media screen and (min-width: 1280px) {
 .contacts-main-paragraph {
+    width: 740px;
+    height: 128px;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 64px;
@@ -9,6 +48,7 @@
     text-align: center;
     color: #fff;
     text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+    margin: auto;
 }
 
 .contacts-photos {
@@ -17,10 +57,15 @@
     gap: 24px;
     justify-content: center;
 }
-.contacts-img {
+.contacts-melon {
 gap: 0px;
 border-radius: 20px;
 }
+
+.contacts-berries {
+    gap: 0px;
+    border-radius: 20px;
+    }
 
 .contacts-description {
 font-family: var(--font-family);
@@ -68,4 +113,5 @@ margin-bottom: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
 }
