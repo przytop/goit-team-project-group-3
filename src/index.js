@@ -1,8 +1,8 @@
 import './sass/main.scss';
 
 // ------- CONST ------- //
-const hamMenu = document.querySelector('.ham-menu');
-const offScreenMenu = document.querySelector('.off-screen-menu');
+const hamMenu = document.querySelector('#ham-menu');
+const offScreenMenu = document.querySelector('#off-screen-menu');
 const modalYourOrder = document.querySelector('#modal-yourorder');
 const modalThankYou = document.querySelector('#modal-thankyou');
 
