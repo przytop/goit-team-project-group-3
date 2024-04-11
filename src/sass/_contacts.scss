@@ -44,6 +44,20 @@
     text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
     margin: auto;
   }
+  .contacts-photos {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    justify-content: center;
+  }
+  .contacts-melon {
+    gap: 0px;
+    border-radius: 20px;
+  }
+  .contacts-berries {
+    gap: 0px;
+    border-radius: 20px;
+  }
   .contacts-description {
     font-family: var(--font-family);
     font-size: 14px;
