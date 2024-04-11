@@ -20,7 +20,6 @@
 }
 
 .howitworks-text {
-  font-weight: 400;
   line-height: 1.28571;
   letter-spacing: var(--letter-spacing);
   text-align: center;
@@ -37,8 +36,8 @@
 }
 
 .howitworks-blocks {
-  width: 335px;
-  height: 112px;
+  max-width: 335px;
+  min-height: 112px;
   background-color: var(--white-color);
   border-radius: 20px;
 }
@@ -48,13 +47,12 @@
   justify-content: center;
   align-items: center;
   gap: 14px;
-  width: 295px;
-  height: 72px;
+  max-width: 295px;
+  min-height: 72px;
   margin: 20px;
 }
 
 .howitworks-cta-first {
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.33333;
   letter-spacing: var(--letter-spacing);
@@ -69,7 +67,6 @@
 }
 
 .howitworks-blocks-text {
-  font-weight: 400;
   line-height: 1.28571;
   letter-spacing: var(--letter-spacing);
   color: var(--black-color);
@@ -77,7 +74,6 @@
 }
 
 .howitworks-cta-second {
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.33333;
   letter-spacing: var(--letter-spacing);
@@ -92,7 +88,6 @@
 }
 
 .howitworks-cta-third {
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.33333;
   letter-spacing: var(--letter-spacing);
@@ -140,13 +135,13 @@
   }
 
   .howitworks-blocks {
-    width: 389px;
+    min-width: 389px;
     height: 128px;
   }
 
   .howitworks-block-step {
-    width: 349px;
-    height: 48px;
+    max-width: 349px;
+    min-height: 48px;
     margin: 40px 20px;
   }
 
