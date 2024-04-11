@@ -1,11 +1,15 @@
-.hero .container {
-    border: 1px dashed blue;
+.hero {
+background-color: #ae1332;
+border: 1px dashed blue;
+}
+
+.hero-header-div {
+    margin: 56px auto -66px;
 }
 
 .hero-header {
     position: relative;
     z-index: 999;
-    margin: 56px auto -56px;
     width: 100%;
     height: 118px;
     font-weight: 500;
@@ -19,6 +23,7 @@
 }
 
 .hero-banner {
+    position: relative;
     justify-items: center;
     margin: 0 auto;
     width: 311px;
@@ -27,13 +32,21 @@
     background-size: cover;
     border-radius: 500px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    outline: 1px solid white;
-    outline-offset: 12px;
+    // outline: 1px solid white;
+    // outline-offset: 12px;
+}
+
+.hero-banner-outline-svg {
+    width: 335px;
+    height: 509px;
+    position: absolute;
+    left: -12px;
+    fill: white;
 }
 
 .hero-shop-button {
     position: absolute;
-    top: 560px;
+    top: 444px;
     left: 0;
     right: 0;
     justify-items: center;
@@ -158,7 +171,9 @@
     flex-wrap: wrap;
     gap: 8px;
     justify-content: center;
+    align-items: center;
     margin: 0 auto 44px;
+        font-style: normal;
 }
 
 .anchor-li {
@@ -166,7 +181,6 @@
     padding: 12px 32px;
     border-radius: 1000px;
     height: 38px;
-    font-family: var(--font-family);
     font-weight: 500;
     font-size: 12px;
     line-height: 1.17;
