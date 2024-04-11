@@ -59,7 +59,7 @@
 }
 
 .fruits .container .fruit-header .fruit-header-container p { 
-    width: 334px;
+    max-width: 320px;
     height: 90px;
     font-size: 14px;
     font-weight: 400;
@@ -86,7 +86,7 @@
 }
 
 .fruits .container .cards-container .fruit-cards .card {
-    width: 335px;
+    max-width: 335px;
     height: 465px;
     border-radius: 20px;
     list-style: none;
@@ -121,7 +121,7 @@
 
 .fruits .container .cards-container .fruit-cards .card .card-inside img {
     width: 295px;
-    margin-left: 20px;
+    margin: auto;
 }
 
 .fruits .container .cards-container .fruit-cards .card .card-inside .fruits-shadow {
@@ -131,9 +131,7 @@
     opacity: 0.05;
     filter: blur(5px);
     border-radius: 50%;
-    position: absolute;
-    left: 70px;
-    top: 365px;
+    margin: auto;
 }
 
 .fruits .container .cards-container .fruit-cards .card .card-inside button {
@@ -223,7 +221,7 @@
     }
     
     .fruits .container .fruit-header .fruit-header-container p { 
-        width: 547px;
+        max-width: 547px;
         height: 54px;
         font-size: 14px;
         font-weight: 400;
@@ -240,9 +238,10 @@
 
     .fruits .container .cards-container .fruit-cards {
         width: 100%;
-        grid-template-columns: 344px 344px;
+        grid-template-columns: 335px 335px;
         grid-column-gap: 16px;
         grid-row-gap: 16px;
+        justify-content: center;
     }
 
     .fruits .container .cards-container .fruit-cards .card {
@@ -259,12 +258,7 @@
 
     .fruits .container .cards-container .fruit-cards .card .card-inside img {
         width: 295px;
-        margin-left: 25px;
-    }
-
-    .fruits .container .cards-container .fruit-cards .card .card-inside .fruits-shadow {
-        left: 75px;
-        top: 365px;
+        margin: auto;
     }
 
     .fruits .container .cards-container .fruit-cards .card .card-inside button {
@@ -309,7 +303,7 @@
     }
 
     .fruits .container .cards-container .fruit-cards {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 335px 335px 335px;
         grid-column-gap: 24px;
         grid-row-gap: 24px;
     }
@@ -322,12 +316,7 @@
     }
 
     .fruits .container .cards-container .fruit-cards .card .card-inside img {
-        margin-left: 47px;
-    }
-
-    .fruits .container .cards-container .fruit-cards .card .card-inside .fruits-shadow {
-        left: 97px;
-        top: 365px;
+        margin: auto;
     }
 
     .fruits .container .cards-container .fruit-cards .card + .nine,
