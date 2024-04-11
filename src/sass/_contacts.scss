@@ -186,14 +186,15 @@
   .contacts-button {
     width: Hug (102px) px;
     height: 48px;
-    top: 134px;
-    left: 290px;
     padding: 15px 35px 15px 35px;
     gap: 15px;
     border-radius: 100px;
     opacity: 0px;
     background-color: #a4cb66;
     text-align: center;
+    position: relative;
+    top: -48px;
+    left: 94px;
   }
 
   .contacts-subscription {
