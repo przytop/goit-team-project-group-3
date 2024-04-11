@@ -1,18 +1,48 @@
-<!-- <header class="header">
-  <nav class="nav-layout">
-    <ul class="list site-nav">
-      <li><a href="" class="link" id="">How It Works</a></li>
-      <li><a href="" class="link" id="">Fruits</a></li>
-      <li><a href="" class="link" id="">Contacts</a></li>
-    </ul>
-    <div class="logo-box">
-      <svg class="logo" width="16" height="16">
-        <use href=""></use>
-      </svg>
-      <a href="" class="logo-text">fresh harvest box </a>
-    </div>
-    <svg class="icon-basket" width="18.67" height="23.33">
-      <use href=""></use>
-    </svg>
-  </nav>
-</header> -->
+<header class="header container">
+    <nav class="nav-layout">
+        <ul class="site-nav">
+          <li><a href="" class="link" id="how-it-works">How It Works</a></li>
+          <li><a href="" class="link" id="fruits">Fruits</a></li>
+          <li><a href="" class="link" id="contacts">Contacts</a></li>
+        </ul>
+
+        <ul class="list off-screen-menu">
+            <li><a href="" class="link" id="how-it-works">How It Works</a></li>
+            <li><a href="" class="link" id="fruits">Fruits</a></li>
+            <li><a href="" class="link" id="contacts">Contacts</a></li>
+            <li>
+              <svg class="icon icon-basket-white" width="28" height="28">
+                <use xlink:href="./images/icons.svg#icon-basket-white"></use>
+              </svg>
+            </li>
+        </ul>
+        <div class="logo-box">
+            <svg class="logo" width="16" height="16">
+                <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+            <a href="./index.html" class="logo-text">fresh harvest box
+            </a>
+        </div>
+        <div>
+            <svg class="icon-basket" width="18.67" height="23.33">
+                <use href="./images/icons.svg#icon-basket"></use>
+            </svg>
+        </div>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    </nav>
+</header>
+
+<script>
+  const hamMenu = document.querySelector('.ham-menu');
+  const offScreenMenu = document.querySelector('.off-screen-menu');
+
+  hamMenu.addEventListener('click', () => {
+    hamMenu.classList.toggle('active');
+    offScreenMenu.classList.toggle('active');
+  })
+
+</script>
