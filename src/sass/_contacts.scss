@@ -97,13 +97,12 @@
   .contacts-button {
     width: Hug (102px) px;
     height: 48px;
-    top: 134px;
-    left: 290px;
     padding: 15px 35px 15px 35px;
-    gap: 15px;
     border-radius: 100px;
-    opacity: 0px;
     background-color: #a4cb66;
+    position: relative;
+    top: -1px;
+    right: 107px;
   }
 
   .contacts-box {
