@@ -1,5 +1,7 @@
 .contacts {
   background-color: var(--bg-color);
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 /* ================================================= MOBILE 👇 ========================================= */
 @media screen and (max-width: 767px) {
@@ -22,7 +24,6 @@
   }
   .contacts-melon {
     border-radius: 20px;
-    margin-bottom: 80px;
   }
 
   .contacts-berries {
