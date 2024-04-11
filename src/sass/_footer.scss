@@ -1,17 +1,44 @@
+footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 .footer-background {
-  background-color: white;
+  background-color: var(--white-color);
+}
+
+.footer-image-container {
+  display: flex;
+  justify-content: center;
 }
 
 .footer-woman-image {
+  display: block;
   width: 300px;
-  margin-top: 80px;
 }
 
-.footer-icon-logo {
-  display: inline-block;
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin: 20 0 20 0;
 }
 
 .footer-text-logo {
+  display: block;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--bg-color);
+}
+
+.footer-icon-logo {
+  display: block;
+}
+
+.footer-text {
   color: var(--bg-color);
 }
 
@@ -19,5 +46,21 @@
   width: 40px;
   height: 40px;
   border: 1px;
-  padding: 8px;
+  margin: 10px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-menu-item {
+  display: block;
+  margin: 10px;
+  color: var(--bg-color);
+}
+
+.footer-contact {
+  color: var(--bg-color);
+  text-align: center;
 }
