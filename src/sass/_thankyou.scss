@@ -1,3 +1,9 @@
+.thankyou-background.is-hidden {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .thankyou-background {
   position: fixed;
   z-index: 999;
@@ -6,6 +12,11 @@
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal-thankyou {
@@ -22,6 +33,7 @@
   background-color: #e03f5e;
   border-radius: 20px;
   padding: 40px 20px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .thankyou-close {
