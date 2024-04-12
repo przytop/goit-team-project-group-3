@@ -4,6 +4,11 @@
     max-width: 100%;
 }
 
+.header .header-wrap {
+    display: flex;
+    align-items: center;
+}
+
 .header .nav-layout {
     display: flex;
     justify-content: space-between;
@@ -30,7 +35,7 @@
     color: var(--bg-color);
 }
 
-.nav-layout .icon-basket {
+.header-wrap .icon-basket {
     display: none;
 }
 
@@ -55,6 +60,7 @@
 
 .off-screen-menu.active {
     right: 0;
+    z-index: 99;
 }
 
 /* Hamburger menu */
@@ -130,14 +136,20 @@
 
 
 @media screen and (max-width: 767px) {
-    .nav-layout .icon-basket {
+    .header-wrap .icon-basket {
         display: none;
+    }
+    .button-header {
+        display: none;
+    }
+    .header .container {
+        max-width: 767px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
     .header {
-        padding: 0 32px;
+        // padding: 0 32px;
         max-width: 1279px;
     }
 
@@ -167,14 +179,28 @@
         color: var(--bg-color);
     }
 
-    .nav-layout .icon-basket {
+    .nav-layout .logo-box {
+        justify-content: center;
+        margin-right: 223px;
+    }
+
+    .header-wrap .icon-basket {
         display: flex;
+    }
+    .button-header {
+        margin-left: auto;
+        background-color: transparent;
     }
 }
 
 @media only screen and (min-width: 1280px) {
     .container {
         max-width: 1280px;
+    }
+
+    .button-header {
+        margin-left: auto;
+        background-color: transparent;
     }
 
     .nav-layout .off-screen-menu {
@@ -202,11 +228,11 @@
 
     .nav-layout .logo-box {
         justify-content: center;
+        margin-right: 502px;
     }
 
-    .nav-layout .icon-basket {
+    .header-wrap .icon-basket {
         display: flex;
-        margin-right: 42px;
     }
 
     .nav-layout .site-nav .link {
