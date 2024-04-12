@@ -1,4 +1,4 @@
-<div class="modal-yourorder" id="modal-yourorder">
+<div class="modal-yourorder is-closed" id="modal-yourorder">
   <div class="modal-window">
     <div class="modal-header">
       <h2 class="modal-title">Your Order</h2>
@@ -45,7 +45,8 @@
                   "
                   width="173"
                 />
-                <img class="img-first"
+                <img
+                  class="img-first"
                   src="./images/yourorder-strawberry-desktop.png"
                   alt="Photo of strawberries basket"
                 />
@@ -89,7 +90,11 @@
                   "
                   width="229"
                 />
-                <img class="img-second" src="./images/yourorder-apple-desktop.png" alt="Photo of apples basket" />
+                <img
+                  class="img-second"
+                  src="./images/yourorder-apple-desktop.png"
+                  alt="Photo of apples basket"
+                />
               </picture>
             </div>
             <div class="basket-checkbox" id="checkbox-input-two">
@@ -130,7 +135,11 @@
                   "
                   width="229"
                 />
-                <img class="img-third" src="./images/yourorder-fruits-desktop.png" alt="Photo of fruits basket" />
+                <img
+                  class="img-third"
+                  src="./images/yourorder-fruits-desktop.png"
+                  alt="Photo of fruits basket"
+                />
               </picture>
             </div>
             <div class="basket-checkbox" id="checkbox-input-three">
@@ -182,7 +191,7 @@
         </div>
         <div class="modal-submit">
           <button class="button-submit" type="submit" id="modal-btn-submit">Submit</button>
-        </div>      
+        </div>
       </form>
     </div>
   </div>
@@ -192,7 +201,7 @@
   const modalYourOrder = document.querySelector('#modal-yourorder');
 
   document.querySelector('#modal-btn-close').addEventListener('click', () => {
-    modalYourOrder.classList.add('is-hidden');
+    modalYourOrder.classList.add('is-closed');
   });
 
   document.querySelector('#checkbox-input-one').addEventListener('click', () => {
@@ -208,6 +217,6 @@
   });
 
   document.querySelector('#modal-btn-submit').addEventListener('submit', () => {
-    modalYourOrder.classList.add('is-hidden');
+    modalYourOrder.classList.add('is-closed');
   });
 </script>
