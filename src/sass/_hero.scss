@@ -197,6 +197,13 @@ background-color: #ae1332;
     }
 }
 
+.hero-shop-link {
+    color: inherit;
+}
+
+.hero-shop-link:hover {
+    color: #A4CB66;
+}
 
 .hero-shop-button {
     position: absolute;
@@ -229,7 +236,19 @@ background-color: #ae1332;
     }
 }
 
+.fruit-desc-area {
+    padding-bottom: 60px;
+    flex-direction: column;
+}
 
+
+// @media tablet and @media desktop
+@media screen and (min-width: 768px) {
+.fruit-desc-area {
+        display: flex;
+        flex-direction: row;
+    }
+}
 
 
 .fruit-desc {
@@ -237,7 +256,7 @@ background-color: #ae1332;
     flex-direction: column;
     justify-content: flex-end;
     margin: 0 auto;
-    max-width: 249px;
+    width: 249px;
     height: 387px;
     border-radius: 500px;
 }
@@ -248,6 +267,12 @@ background-color: #ae1332;
 
 .yellow {
     background-color: #F5CE13;
+}
+
+@media screen and (min-width: 768px) {
+    .fruit-desc {
+        margin: 0;
+    }
 }
 
 .fruit-h3 {
@@ -296,6 +321,12 @@ background-color: #ae1332;
     padding-top: 84px;
 }
 
+@media screen and (min-width: 768px) {
+    .first-block {
+        margin-right: auto;
+        }
+}
+
 .first-block-text {
     font-weight: 400;
     font-size: 14px;
@@ -307,10 +338,20 @@ background-color: #ae1332;
     height: 90px;
     margin: 0 auto 44px;
 }
-
+                                              
 .second-block {
     padding-top: 44px;
     margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+.second-block {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        padding-top: 84px;
+        gap: 44px;
+    }
 }
 
 .anchor-buttons {
@@ -321,6 +362,15 @@ background-color: #ae1332;
     align-items: center;
     margin: 0 auto 44px;
     font-style: normal;
+}
+
+// @media tablet and @media desktop
+@media screen and (min-width: 768px) {
+.anchor-buttons {
+    justify-content: flex-end;
+    width: 75%;
+    margin: 0;
+    }
 }
 
 .anchor-li {
@@ -337,15 +387,12 @@ background-color: #ae1332;
     color: #fff;
     text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
 }
-
+@media screen and (max-width: 767px){
 .anchor-li:nth-child(odd) {
     width: 125px;
-}
-
+    }
 .anchor-li:nth-child(even) {
     width: 132px;
+    }
 }
 
-.fruit-desc-area {
-    padding-bottom: 60px;
-}
