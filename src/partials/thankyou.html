@@ -1,4 +1,4 @@
-<div class="thankyou-background is-closed" id="modal-thankyou">
+<div class="thankyou-background is-hidden" id="modal-thankyou">
   <div class="modal-thankyou">
     <button class="thankyou-close" type="button" id="thankyou-btn">
       <svg class="close-icon" width="28" height="28">
@@ -31,3 +31,9 @@
     </div>
   </div>
 </div>
+
+<script>
+  document.querySelector('#thankyou-btn').addEventListener('click', () => {
+    document.querySelector('#modal-thankyou').classList.remove('is-hidden');
+  });
+</script>
