@@ -4,15 +4,23 @@
       <div class="footer-wrap">
         <div class="footer-tablet-wrap">
           <div>
-            <div class="footer-image-container">
-              <img
-                class="footer-woman-image"
-                srcset="./images/footer-girl-mobile.jpg x1, ./images/footer-girl-mobile@2x.jpg x2"
-                src="./images/footer-girl-tablet-desktop.jpg"
-                alt="Happy woman holding bananas in her
-    hands."
+            <picture class="footer-image-container">
+              <source
+                media="(max-width: 767px)"
+                srcset="./images/footer-girl-mobile.jpg 1x, ./images/footer-girl-mobile@2x.jpg 2x"
               />
-            </div>
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/footer-girl-tablet-desktop.jpg         1x,
+                  ./images/imagefooter-girl-tablet-desktop@2x.jpg 2x
+                "
+              />
+              <img
+                src="./images/footer-girl-mobile.jpg"
+                alt="Happy girl holding bananas in ger hands"
+              />
+            </picture>
             <div class="footer-logo">
               <svg class="footer-icon-logo" width="16" height="16">
                 <use href="./images/icons.svg#icon-logo"></use>
