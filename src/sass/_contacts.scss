@@ -75,10 +75,6 @@
     text-align: center;
     width: 492px;
     height: 54px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80px;
-    margin-bottom: 80px;
   }
 
   .contacts-input {
@@ -88,7 +84,7 @@
     left: 100px;
     gap: 0px;
     border-radius: 100px;
-    opacity: 0.3px;
+    opacity: 0.3;
     border: 1px solid rgba(255, 255, 255, 1);
     background-color: transparent;
     padding: 0px 24px;
@@ -113,6 +109,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+  .contacts-fruits {
+    margin-bottom: 80px;
   }
 }
 
@@ -164,10 +165,6 @@
     line-height: 18px;
     letter-spacing: -0.04em;
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .contacts-input {
@@ -177,7 +174,7 @@
     left: 100px;
     gap: 0px;
     border-radius: 100px;
-    opacity: 0.3px;
+    opacity: 0.3;
     border: 1px solid rgba(255, 255, 255, 1);
     background-color: transparent;
     padding: 0px 24px;
@@ -209,9 +206,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 80px;
   }
   .contacts-subscription {
     display: flex;
     align-items: center;
+  }
+  .contacts-fruits {
+    margin-bottom: 80px;
   }
 }
