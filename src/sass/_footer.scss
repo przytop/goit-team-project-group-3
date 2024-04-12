@@ -64,12 +64,12 @@
   height: 40px;
   border: 1px;
   margin: 10px;
+  border-radius: 10px;
 
   transition: background-color 0.3s;
 }
 
 .footer-socials-logo:hover {
-  border-radius: 10px;
   // fill: var(--bg-color);
   background-color: pink;
 }
@@ -118,6 +118,9 @@
     margin-bottom: 0;
   }
   .footer-menu {
-    margin: 0;
+    margin-left: 240px;
+  }
+  .footer-socials {
+    margin-top: 0;
   }
 }
