@@ -1,2 +1,299 @@
 .modal-yourorder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 999;
+  // visibility: hidden;
+  // opacity: 0;
+}
+
+.modal-yourorder .modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 335px;
+  max-height: 903px;
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--white-color);
+  // translate: -50% -50%;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-yourorder .modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.modal-yourorder .modal-button-close {
+  background: var(--white-color);
+}
+
+.modal-yourorder .modal-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: var(--letter-spacing);
+  text-transform: uppercase;
+  color: var(--bg-color);
+  text-shadow: var(--text-shadow);
+}
+
+.modal-yourorder .button-wrap {
+  position: relative;
+}
+
+.modal-yourorder .modal-fruits {
+  margin-bottom: 40px;
+}
+
+.modal-yourorder .fruits-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-yourorder .basket {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 119px;
+  border-radius: 20px;
+}
+
+.modal-yourorder .basket.first {
+  background: #f8766b;
+}
+
+.modal-yourorder .basket.second {
+  background: #edd251;
+}
+
+.modal-yourorder .basket.third {
+  background: #9dc262;
+}
+
+.modal-yourorder .basket-info {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.modal-yourorder .basket-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: var(--letter-spacing);
+}
+
+.modal-yourorder .basket-text {
+  line-height: 129%;
+  letter-spacing: var(--letter-spacing-smaller);
+}
+
+.modal-yourorder .basket-image {
+  padding: 16px 32px 8px 0;
+}
+
+.modal-yourorder .basket-image.first {
+  width: 88px;
+}
+
+.modal-yourorder .basket-checkbox {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 14px;
+  right: 14px;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--white-color);
+  border-radius: 4px;
+}
+
+.checkbox-input {
+  display: none;
+}
+
+.checkbox-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--white-color);
+  border-radius: 4px;
+}
+
+.modal-yourorder .form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.modal-yourorder .form-input {
+  border: 1px solid var(--black-color);
+  border-radius: 100px;
+  height: 46px;
+  opacity: 0.3;
+  padding: 14px 24px;
+  outline: none;
+}
+
+.modal-yourorder .form-textarea {
+  border: 1px solid var(--black-color);
+  border-radius: 20px;
+  height: 132px;
+  opacity: 0.3;
+  padding: 14px 24px;
+  resize: none;
+  outline: none;
+}
+
+.modal-yourorder .form-input:focus,
+.modal-yourorder .form-textarea:focus {
+  border: 2px solid var(--black-color);
+  opacity: 0.6;
+}
+
+.modal-yourorder input:user-invalid,
+.modal-yourorder textarea:user-invalid {
+  border: 3.5px solid var(--bg-color);
+}
+
+.modal-yourorder .form-input::placeholder,
+.modal-yourorder .form-textarea::placeholder {
+  line-height: 129%;
+  letter-spacing: var(--letter-spacing);
+  opacity: 1;
+  border-color: var(--black-color);
+}
+
+.modal-yourorder .modal-submit {
+  border-radius: 100px;
+  padding: 12px 24px;
+  width: 92px;
+  height: 42px;
+  background: #9dc162;
+}
+
+.modal-yourorder .button-submit {
+  line-height: 129%;
+  letter-spacing: var(--letter-spacing);
+  text-transform: capitalize;
+  background: inherit;
+  padding: 0;
+}
+
+/* ================================================= TABLET ========================================= */
+@media screen and (min-width: 768px) {
+  .modal-yourorder .modal-window {
+    min-width: 704px;
+    padding: 40px;
+    background-image: url(../images/yourorder-girl-desktop.png), url(../images/yourorder-girl-desktop@2x.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 469px 467px;
+    background-position: right -179px bottom -3px
+  }
+
+  .modal-yourorder .modal-title {
+    font-size: 40px;
+    line-height: 110%;
+  }
+  
+  .modal-yourorder .button-wrap {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .modal-yourorder .modal-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .modal-yourorder .fruits-card {
+    flex-direction: row;
+  }
+
+  .modal-yourorder .basket {
+    width: 200px;
+    height: 250px;
+  }
+
+  .modal-yourorder .basket-info {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .modal-yourorder .basket-image {
+    position: absolute;
+    padding: 0;
+  }
+
+  .modal-yourorder .img-first {
+    margin: 88px 33px 14px 34px;
+  }
+
+  .modal-yourorder .img-second,
+  .modal-yourorder .img-third {
+    margin: 88px 14px 14px 14px;
+  }
+
+  .modal-yourorder .form-container {
+    width: 360px;
+  }
+}
+
+/* ================================================= DESKTOP ========================================= */
+@media screen and (min-width: 1280px) {
+  .modal-yourorder .modal-window {
+    min-width: 891px;
+    background-image: url(../images/yourorder-girl-desktop.png), url(../images/yourorder-girl-desktop@2x.png);
+    background-size: 471px 458px;
+    background-position: right bottom;
+  }
+
+  .modal-yourorder .fruits-card {
+    gap: 20px;
+  }
+
+  .modal-yourorder .basket {
+    min-width: 257px;
+    min-height: 308px;
+  }
+
+  .modal-yourorder .basket-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: var(--letter-spacing);
+  }
+
+  .modal-yourorder .basket-checkbox {
+    width: 20px;
+    height: 20px;
+  }
+
+  .modal-yourorder .checkbox-icon {
+    width: 10px;
+    height: 10px;
+  }
 }

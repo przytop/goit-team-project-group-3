@@ -1,3 +1,213 @@
-<div class="modal-yourorder">
-  <!-- test -->
+<div class="modal-yourorder is-closed" id="modal-yourorder">
+  <div class="modal-window">
+    <div class="modal-header">
+      <h2 class="modal-title">Your Order</h2>
+      <div class="button-wrap">
+        <button class="modal-button-close" type="button" id="modal-btn-close">
+          <svg class="modal-icon" width="24" height="24">
+            <use class="test" href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="modal-fruits">
+      <ul class="fruits-cards">
+        <li class="fruits-card">
+          <div class="basket first">
+            <div class="basket-info">
+              <h3 class="basket-title">Strawberry Basket</h3>
+              <p class="basket-text">Plant</p>
+            </div>
+            <div class="basket-image">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/yourorder-strawberry-mobile.png    1x,
+                    ./images/yourorder-strawberry-mobile@2x.png 2x
+                  "
+                  width="88"
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                  srcset="
+                    ./images/yourorder-strawberry-tablet.png    1x,
+                    ./images/yourorder-strawberry-tablet@2x.png 2x
+                  "
+                  width="133"
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/yourorder-strawberry-desktop.png    1x,
+                    ./images/yourorder-strawberry-desktop@2x.png 2x
+                  "
+                  width="173"
+                />
+                <img class="img-first"
+                  src="./images/yourorder-strawberry-desktop.png"
+                  alt="Photo of strawberries basket"
+                />
+              </picture>
+            </div>
+            <div class="basket-checkbox" id="checkbox-input-one">
+              <input class="checkbox-input" type="checkbox" />
+              <svg class="checkbox-icon is-hidden" id="checkbox-icon-one" width="8" height="8">
+                <use href="./images/icons.svg#icon-checkbox-pick"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="basket second">
+            <div class="basket-info">
+              <h3 class="basket-title">Apple Basket</h3>
+              <p class="basket-text">Plant</p>
+            </div>
+            <div class="basket-image">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/yourorder-apple-mobile.png    1x,
+                    ./images/yourorder-apple-mobile@2x.png 2x
+                  "
+                  width="106"
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                  srcset="
+                    ./images/yourorder-apple-tablet.png    1x,
+                    ./images/yourorder-apple-tablet@2x.png 2x
+                  "
+                  width="172"
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/yourorder-apple-desktop.png    1x,
+                    ./images/yourorder-apple-desktop@2x.png 2x
+                  "
+                  width="229"
+                />
+                <img class="img-second" src="./images/yourorder-apple-desktop.png" alt="Photo of apples basket" />
+              </picture>
+            </div>
+            <div class="basket-checkbox" id="checkbox-input-two">
+              <input class="checkbox-input" type="checkbox" />
+              <svg class="checkbox-icon is-hidden" id="checkbox-icon-two" width="8" height="8">
+                <use href="./images/icons.svg#icon-checkbox-pick"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="basket third">
+            <div class="basket-info">
+              <h3 class="basket-title">Fruits Basket</h3>
+              <p class="basket-text">Plant</p>
+            </div>
+            <div class="basket-image">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/yourorder-fruits-mobile.png    1x,
+                    ./images/yourorder-fruits-mobile@2x.png 2x
+                  "
+                  width="107"
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                  srcset="
+                    ./images/yourorder-fruits-tablet.png    1x,
+                    ./images/yourorder-fruits-tablet@2x.png 2x
+                  "
+                  width="172"
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/yourorder-fruits-desktop.png    1x,
+                    ./images/yourorder-fruits-desktop@2x.png 2x
+                  "
+                  width="229"
+                />
+                <img class="img-third" src="./images/yourorder-fruits-desktop.png" alt="Photo of fruits basket" />
+              </picture>
+            </div>
+            <div class="basket-checkbox" id="checkbox-input-three">
+              <input class="checkbox-input" type="checkbox" />
+              <svg class="checkbox-icon is-hidden" id="checkbox-icon-three" width="8" height="8">
+                <use class="checkbox-icons" href="./images/icons.svg#icon-checkbox-pick"></use>
+              </svg>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="modal-form">
+      <form class="modal-form">
+        <div class="form-container">
+          <input
+            class="form-input"
+            type="text"
+            id="user-name"
+            name="user-name"
+            placeholder="Enter full name..."
+            pattern="[A-Za-z]{3,99}"
+            required
+          />
+          <input
+            class="form-input"
+            type="email"
+            id="user-email"
+            name="user-email"
+            placeholder="Enter email..."
+            required
+          />
+          <input
+            class="form-input"
+            type="number"
+            id="user-card"
+            name="user-card"
+            placeholder="Enter card..."
+            required
+          />
+          <textarea
+            class="form-textarea"
+            id="user-comment"
+            name="user-comment"
+            placeholder="Enter comment..."
+            required
+          ></textarea>
+        </div>
+        <div class="modal-submit">
+          <button class="button-submit" type="submit" id="modal-btn-submit">Submit</button>
+        </div>      
+      </form>
+    </div>
+  </div>
 </div>
+
+<script>
+  const modalYourOrder = document.querySelector('#modal-yourorder');
+
+  document.querySelector('#modal-btn-close').addEventListener('click', () => {
+    modalYourOrder.classList.add('is-closed');
+  });
+
+  document.querySelector('#checkbox-input-one').addEventListener('click', () => {
+    document.querySelector('#checkbox-icon-one').classList.toggle('is-hidden');
+  });
+
+  document.querySelector('#checkbox-input-two').addEventListener('click', () => {
+    document.querySelector('#checkbox-icon-two').classList.toggle('is-hidden');
+  });
+
+  document.querySelector('#checkbox-input-three').addEventListener('click', () => {
+    document.querySelector('#checkbox-icon-three').classList.toggle('is-hidden');
+  });
+
+  document.querySelector('#modal-btn-submit').addEventListener('submit', () => {
+    modalYourOrder.classList.add('is-closed');
+  });
+</script>
