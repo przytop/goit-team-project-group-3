@@ -10,7 +10,7 @@
         <li><a href="#how-it-works" class="link">How It Works</a></li>
         <li><a href="#fruits" class="link">Fruits</a></li>
         <li><a href="#contacts" class="link">Contacts</a></li>
-        <li>
+        <li class="icon-wrap">
           <svg class="icon icon-basket-white" width="28" height="28">
             <use xlink:href="./images/icons.svg#icon-basket-white"></use>
           </svg>
@@ -46,4 +46,7 @@
     offScreenMenu.classList.toggle('active');
   })
 
+  document.querySelector('#').addEventListener('click', () => {
+    modalYourOrder.classList.remove('is-closed');
+  });
 </script>
