@@ -250,6 +250,16 @@ background-color: #ae1332;
     }
 }
 
+// @media tablet and @media desktop
+@media screen and (min-width: 1280px) {
+    .fruit-desc-area {
+        position: relative;
+        top: -408px;
+        margin-bottom: -408px;
+
+    }
+}
+
 
 .fruit-desc {
     display: flex;
@@ -261,12 +271,26 @@ background-color: #ae1332;
     border-radius: 500px;
 }
 
+@media screen and (min-width: 768px) {
+    .fruit-desc.yellow{
+    margin-right: 32px;
+ }
+}
+
+@media screen and (min-width: 768px) {
+    .fruit-desc.green {
+        margin-left: 32px;
+    }
+}
+
 .green {
     background-color: #a4cb66;
+    margin-left: 64px;
 }
 
 .yellow {
     background-color: #F5CE13;
+    margin-right: 64px;
 }
 
 @media screen and (min-width: 768px) {
