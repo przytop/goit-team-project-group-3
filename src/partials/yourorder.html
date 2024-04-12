@@ -1,4 +1,4 @@
-<div class="modal-yourorder is-closed" id="modal-yourorder">
+<div class="modal-yourorder" id="modal-yourorder">
   <div class="modal-window">
     <div class="modal-header">
       <h2 class="modal-title">Your Order</h2>
@@ -192,7 +192,7 @@
   const modalYourOrder = document.querySelector('#modal-yourorder');
 
   document.querySelector('#modal-btn-close').addEventListener('click', () => {
-    modalYourOrder.classList.add('is-closed');
+    modalYourOrder.classList.add('is-hidden');
   });
 
   document.querySelector('#checkbox-input-one').addEventListener('click', () => {
@@ -208,6 +208,6 @@
   });
 
   document.querySelector('#modal-btn-submit').addEventListener('submit', () => {
-    modalYourOrder.classList.add('is-closed');
+    modalYourOrder.classList.add('is-hidden');
   });
 </script>
