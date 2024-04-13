@@ -46,10 +46,12 @@
   });
 
   document.querySelector('#header-basket').addEventListener('click', () => {
-    modalYourOrder.classList.remove('is-closed');
+    modalYourOrder.classList.remove('is-hidden');
+    bodyScrollLock.disableBodyScroll(document.body);
   });
 
   document.querySelector('#header-basket-white').addEventListener('click', () => {
-    modalYourOrder.classList.remove('is-closed');
+    modalYourOrder.classList.remove('is-hidden');
+    bodyScrollLock.disableBodyScroll(document.body);
   });
 </script>

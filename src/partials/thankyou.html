@@ -1,4 +1,4 @@
-<div class="thankyou-background is-closed" id="modal-thankyou">
+<div class="thankyou-background is-hidden" id="modal-thankyou">
   <div class="modal-thankyou">
     <button class="thankyou-close" type="button" id="thankyou-btn">
       <svg class="close-icon" width="28" height="28">
@@ -34,6 +34,7 @@
 
 <script>
   document.querySelector('#thankyou-btn').addEventListener('click', () => {
-    document.querySelector('#modal-thankyou').classList.add('is-closed');
+    document.querySelector('#modal-thankyou').classList.add('is-hidden');
+    bodyScrollLock.enableBodyScroll(document.body);
   });
 </script>

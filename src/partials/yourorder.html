@@ -1,4 +1,4 @@
-<div class="modal-yourorder is-closed" id="modal-yourorder">
+<div class="modal-yourorder is-hidden" id="modal-yourorder">
   <div class="modal-window">
     <div class="modal-header">
       <h2 class="modal-title">Your Order</h2>
@@ -201,7 +201,8 @@
   const modalYourOrder = document.querySelector('#modal-yourorder');
 
   document.querySelector('#modal-btn-close').addEventListener('click', () => {
-    modalYourOrder.classList.add('is-closed');
+    modalYourOrder.classList.add('is-hidden');
+    bodyScrollLock.enableBodyScroll(document.body);
   });
 
   document.querySelector('#checkbox-input-one').addEventListener('click', () => {
@@ -216,8 +217,8 @@
     document.querySelector('#checkbox-icon-three').classList.toggle('is-hidden');
   });
 
-  document.querySelector('#modal-btn-submit').addEventListener('submit', () => {
-    modalYourOrder.classList.add('is-closed');
-    document.querySelector('#modal-thankyou').classList.remove('is-closed');
+  document.querySelector('#modal-btn-submit').addEventListener('click', () => {
+    modalYourOrder.classList.add('is-hidden');
+    document.querySelector('#modal-thankyou').classList.remove('is-hidden');
   });
 </script>
