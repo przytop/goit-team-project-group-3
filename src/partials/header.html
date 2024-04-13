@@ -20,8 +20,7 @@
         <svg class="logo" width="16" height="16">
           <use href="./images/icons.svg#icon-logo"></use>
         </svg>
-        <a href="./index.html" class="logo-text">fresh harvest box
-        </a>
+        <a href="./index.html" class="logo-text">fresh harvest box </a>
       </div>
       <div class="ham-menu">
         <span></span>
@@ -29,7 +28,7 @@
         <span></span>
       </div>
     </nav>
-    <button type="button" class="button-header">
+    <button type="button" class="button-header" id="header-basket">
       <svg class="icon-basket" width="18.67" height="23.33">
         <use href="./images/icons.svg#icon-basket"></use>
       </svg>
@@ -44,9 +43,9 @@
   hamMenu.addEventListener('click', () => {
     hamMenu.classList.toggle('active');
     offScreenMenu.classList.toggle('active');
-  })
+  });
 
-  document.querySelector('#').addEventListener('click', () => {
+  document.querySelector('#header-basket').addEventListener('click', () => {
     modalYourOrder.classList.remove('is-closed');
   });
 </script>
