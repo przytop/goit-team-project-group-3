@@ -94,18 +94,17 @@
   }
 
   .contacts-form {
+    position: relative;
     text-align: center;
   }
 
   .contacts-button {
-    width: Hug (102px) px;
+    width: 102px;
     height: 48px;
-    padding: 15px 35px 15px 35px;
     border-radius: 100px;
     background-color: #a4cb66;
-    position: relative;
-    top: -1px;
-    right: 107px;
+    position: absolute;
+    right: 0;
   }
 
   .contacts-box {
