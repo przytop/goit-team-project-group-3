@@ -1,6 +1,5 @@
 .contacts {
   background-color: var(--bg-color);
-  padding-top: 40px;
   padding-bottom: 80px;
 }
 /* ================================================= MOBILE 👇 ========================================= */
@@ -35,6 +34,10 @@
 }
 /* ================================================= TABLET 👇 ========================================= */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+  .contacts {
+    padding-bottom: 144px;
+  }
+
   .contacts-main-paragraph {
     width: 648px;
     height: 108px;
@@ -92,8 +95,8 @@
 
   .contacts-form {
     text-align: center;
-    margin-bottom: 144px;
   }
+
   .contacts-button {
     width: Hug (102px) px;
     height: 48px;
@@ -119,6 +122,10 @@
 
 /* ================================================= DESKTOP 👇 ========================================= */
 @media screen and (min-width: 1280px) {
+  .contacts {
+    padding-bottom: 150px;
+  }
+
   .contacts-main-paragraph {
     width: 740px;
     height: 128px;
@@ -198,7 +205,6 @@
   }
 
   .contacts-subscription {
-    margin-bottom: 150px;
     margin-left: 494px;
     margin-right: 494px;
   }
