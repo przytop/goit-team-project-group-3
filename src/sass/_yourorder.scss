@@ -21,7 +21,6 @@
   padding: 20px;
   border-radius: 20px;
   background: var(--white-color);
-  // translate: -50% -50%;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -205,18 +204,19 @@
   .modal-yourorder .modal-window {
     min-width: 704px;
     padding: 40px;
-    background-image: url(../images/yourorder-girl-desktop.png), url(../images/yourorder-girl-desktop@2x.png);
+    background-image: url(../images/yourorder-girl-tablet.png),
+      url(../images/yourorder-girl-tablet@2x.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 469px 467px;
-    background-position: right -179px bottom -3px
+    background-position: right -179px bottom -3px;
   }
 
   .modal-yourorder .modal-title {
     font-size: 40px;
     line-height: 110%;
   }
-  
+
   .modal-yourorder .button-wrap {
     position: absolute;
     top: 20px;
@@ -266,7 +266,8 @@
 @media screen and (min-width: 1280px) {
   .modal-yourorder .modal-window {
     min-width: 891px;
-    background-image: url(../images/yourorder-girl-desktop.png), url(../images/yourorder-girl-desktop@2x.png);
+    background-image: url(../images/yourorder-girl-desktop.png),
+      url(../images/yourorder-girl-desktop@2x.png);
     background-size: 471px 458px;
     background-position: right bottom;
   }
