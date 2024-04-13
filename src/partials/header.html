@@ -22,7 +22,7 @@
         </svg>
         <a href="./index.html" class="logo-text">fresh harvest box </a>
       </div>
-      <div class="ham-menu">
+      <div class="ham-menu" id="ham-menu">
         <span></span>
         <span></span>
         <span></span>
@@ -37,7 +37,7 @@
 </header>
 
 <script>
-  const hamMenu = document.querySelector('.ham-menu');
+  const hamMenu = document.querySelector('#ham-menu');
   const offScreenMenu = document.querySelector('.off-screen-menu');
 
   hamMenu.addEventListener('click', () => {
