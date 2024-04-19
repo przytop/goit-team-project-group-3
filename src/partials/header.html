@@ -35,23 +35,3 @@
     </button>
   </div>
 </header>
-
-<script>
-  const hamMenu = document.querySelector('.ham-menu');
-  const offScreenMenu = document.querySelector('.off-screen-menu');
-
-  hamMenu.addEventListener('click', () => {
-    hamMenu.classList.toggle('active');
-    offScreenMenu.classList.toggle('active');
-  });
-
-  document.querySelector('#header-basket').addEventListener('click', () => {
-    modalYourOrder.classList.remove('is-hidden');
-    bodyScrollLock.disableBodyScroll(document.body);
-  });
-
-  document.querySelector('#header-basket-white').addEventListener('click', () => {
-    modalYourOrder.classList.remove('is-hidden');
-    bodyScrollLock.disableBodyScroll(document.body);
-  });
-</script>
